@@ -125,14 +125,16 @@ export default function LoginIoT({ onLogin }) {
             </div>
           </div>
 
-          {/* Gambar tong: disembunyikan pada layar HP kecil */}
-          <div className="absolute bottom-[5%] left-1/2 z-10 hidden w-[48%] max-w-[570px] -translate-x-1/2 sm:block lg:bottom-[8%] lg:w-[72%]">
-            <img
-              src={sampahImg}
-              alt="Smart Bin"
-              className="h-auto w-full object-contain drop-shadow-[0_25px_25px_rgba(30,80,80,0.16)]"
-            />
-          </div>
+          
+{/* Gambar tong: tampil di HP dan desktop */}
+<div className="absolute bottom-[2%] left-1/2 z-10 block w-[65%] max-w-[570px] -translate-x-1/2 sm:bottom-[5%] sm:w-[48%] lg:bottom-[8%] lg:w-[72%]">
+  <img
+    src={sampahImg}
+    alt="Smart Bin"
+    className="h-auto w-full object-contain drop-shadow-[0_25px_25px_rgba(30,80,80,0.16)]"
+  />
+</div>
+
 
           {/* Garis dekorasi */}
           <div className="absolute bottom-[30%] right-[20%] z-20 flex rotate-[45deg] items-end gap-1 sm:bottom-[55%] sm:right-[22%] sm:gap-2">
